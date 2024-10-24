@@ -1,0 +1,11 @@
+added some debugging
+
+Signed-off-by: day0ops <kasun.talwatta@gmail.com>
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch kasunt-adding-debug-lines
+# Changes to be committed:
+#	modified:   source/extensions/filters/http/grpc_json_transcoder/json_transcoder_filter.cc
+#
