@@ -240,6 +240,7 @@ JsonTranscoderConfig::JsonTranscoderConfig(
 }
 
 void JsonTranscoderConfig::addFileDescriptor(const Protobuf::FileDescriptorProto& file) {
+  ENVOY_LOG(info, "transcoding_filter building file: {} and package: {}", file.name(), file.package());
   if (descriptor_pool_.BuildFile(file) == nullptr) {
     throw EnvoyException("transcoding_filter: Unable to build proto descriptor pool");
   }
